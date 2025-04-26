@@ -1,0 +1,13 @@
+<div *ngIf="location">
+  <h1>{{ location.name }}</h1>
+  <p><strong>Type:</strong> {{ location.type }}</p>
+  <p><strong>Dimension:</strong> {{ location.dimension }}</p>
+  <div>
+    <h3>Residents:</h3>
+    <ul>
+      <li *ngFor="let resident of location.residents">
+        {{ resident }}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -4,5 +4,7 @@
     <h3>{{ character.name }}</h3>
     <p>Status: {{ character.status }}</p>
     <p>Species: {{ character.species }}</p>
+    <!-- Enlace dinámico para redirigir al detalle del personaje -->
+    <button (click)="goToCharacterDetail(character.id)">View Details</button>
   </div>
 </div>
