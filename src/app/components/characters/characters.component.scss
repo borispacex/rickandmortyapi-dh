@@ -1,0 +1,32 @@
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.character-card {
+  background: #f4f4f4;
+  padding: 16px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.character-card h3 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+}
+
+.character-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
