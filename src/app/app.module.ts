@@ -7,6 +7,8 @@ import { CharactersComponent } from './components/characters/characters.componen
 import { CharacterDetailComponent } from './components/character-detail/character-detail.component';
 import { LocationDetailComponent } from './components/location-detail/location-detail.component';
 import { EpisodeDetailComponent } from './components/episode-detail/episode-detail.component';
+import { LocationListComponent } from './components/location-list/location-list.component';
+import { EpisodeListComponent } from './components/episode-list/episode-list.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { EpisodeDetailComponent } from './components/episode-detail/episode-deta
     CharacterDetailComponent,
     LocationDetailComponent,
     EpisodeDetailComponent,
+    LocationListComponent,
+    EpisodeListComponent,
   ],
   imports: [
     BrowserModule,

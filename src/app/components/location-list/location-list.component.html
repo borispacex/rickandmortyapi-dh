@@ -1,0 +1,9 @@
+<div class="location-list">
+  <div *ngFor="let location of locations" class="location-card">
+    <h3>{{ location.name }}</h3>
+    <p>Type: {{ location.type }}</p>
+    <p>Dimension: {{ location.dimension }}</p>
+    <!-- Enlace dinámico para redirigir al detalle de la ubicación -->
+    <button (click)="goToLocationDetail(location.id)">View Details</button>
+  </div>
+</div>
