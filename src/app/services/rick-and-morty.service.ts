@@ -15,6 +15,17 @@ export class RickAndMortyService {
     return this.http.get(`${this.API_URL}/character`);
   }
 
+  // Obtener lista de ubicaciones
+  getLocations(page: number = 1): Observable<any> {
+    return this.http.get<any>(`${this.API_URL}/location?page=${page}`);
+  }
+
+  // Obtener lista de episodios
+  getEpisodes(page: number = 1): Observable<any> {
+    return this.http.get<any>(`${this.API_URL}/episode?page=${page}`);
+  }
+
+
   // Obtener personaje por ID
   getCharacterById(id: number): Observable<any> {
     return this.http.get(`${this.API_URL}/character/${id}`);

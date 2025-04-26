@@ -8,14 +8,20 @@ import {RickAndMortyService} from "../../services/rick-and-morty.service";
   styleUrls: ['./episode-list.component.scss'],
 })
 export class EpisodeListComponent implements OnInit {
-  episodes: any[] = [];
+  episodes: any[] = []; // Lista de episodios
+  currentPage: number = 1; // Paginación: página actual
+
 
   constructor(private router: Router, private service: RickAndMortyService) {}
 
   ngOnInit(): void {
-    // Consumir la API para obtener la lista de episodios
-    this.service.getCharacters().subscribe((data) => {
-      this.episodes = data.results;
+    this.loadEpisodes(); // Cargar episodios al inicializar
+  }
+
+  // Método para cargar la lista de episodios
+  loadEpisodes(): void {
+    this.service.getEpisodes(this.currentPage).subscribe((response) => {
+      this.episodes = response.results;
     });
   }
 

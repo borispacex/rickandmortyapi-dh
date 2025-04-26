@@ -1,0 +1,50 @@
+/* Navbar con estilo blanco */
+.navbar {
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #f3f3f3; /* Línea sutil en la parte inferior */
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 1.5rem; /* Espaciado más amplio entre elementos */
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #333333; /* Color de texto oscuro */
+  font-size: 1.3rem; /* Texto más legible */
+  font-weight: 600; /* Peso del texto más grueso */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-item a:hover {
+  color: #007bff; /* Color azul al pasar el mouse por encima */
+}
+
+.navbar-item a.active {
+  color: #007bff; /* El enlace activo se resalta con un azul */
+  text-decoration: underline; /* Subrayado para distinguirlo */
+}
+
+/* Ajuste responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .navbar-item {
+    margin: 0.5rem 0;
+  }
+}
